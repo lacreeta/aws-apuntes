@@ -61,7 +61,7 @@ nav:
       - Monitorización: monitoring/monitoring.md
 
   - Analytics / BI:
-      - Amazon QuickSight: analytics/quicksight.md
+      - Amazon QuickSight: BI/quicksight.md
 
   - Billing:
       - Costes y facturación: billing/billing.md
