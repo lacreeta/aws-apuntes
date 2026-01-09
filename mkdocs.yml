@@ -38,6 +38,7 @@ nav:
       - Amazon Macie: security/macie.md
       - Amazon GuardDuty: security/guardduty.md
       - Seguridad en la red: security/network-security.md
+      - KMS: security/kms.md
 
   - Compute:
       - EC2: compute/ec2.md
@@ -47,6 +48,9 @@ nav:
 
   - Storage:
       - Amazon S3: storage/s3.md
+      - Amazon EBS: storage/ebs.md
+      - Amazon EFS: storage/efs.md
+      - Amazon S3 Glacier: storage/glacier.md
 
   - Databases:
       - Bases de datos: databases/databases.md
