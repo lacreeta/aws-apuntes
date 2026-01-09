@@ -1,0 +1,74 @@
+site_name: AWS Cloud Practitioner Notes
+site_description: Apuntes de AWS orientados a la certificación Cloud Practitioner con equivalencias a Azure
+site_author: Andrés González
+
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.highlight
+    - search.share
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed
+  - toc:
+      permalink: true
+
+nav:
+  - Inicio: index.md
+
+  - Fundamentos:
+      - Regiones y AZ: fundamentals/regions-az.md
+      - Shared Responsibility Model: fundamentals/shared-responsibility.md
+      - Well-Architected Framework: fundamentals/well-architected.md
+
+  - Seguridad:
+      - IAM: security/iam.md
+      - Amazon Macie: security/macie.md
+      - Amazon GuardDuty: security/guardduty.md
+      - Seguridad en la red: security/network-security.md
+
+  - Compute:
+      - EC2: compute/ec2.md
+      - Elastic Beanstalk: compute/elastic-beanstalk.md
+      - Serverless: compute/serverless.md
+      - Contenedores: compute/containers.md
+
+  - Storage:
+      - Amazon S3: storage/s3.md
+
+  - Databases:
+      - Bases de datos: databases/databases.md
+
+  - Networking:
+      - VPC: networking/vpc.md
+      - Conectividad: networking/connectivity.md
+      - Load Balancers: networking/load-balancers.md
+
+  - Operaciones:
+      - Systems Manager: operations/systems-manager.md
+      - Monitorización: monitoring/monitoring.md
+
+  - Analytics / BI:
+      - Amazon QuickSight: analytics/quicksight.md
+
+  - Billing:
+      - Costes y facturación: billing/billing.md
+
+  - Gobernanza:
+      - CloudFormation: governance/cloudformation.md
+      - AWS Organizations: governance/organizations.md
+      - Service Catalog: governance/service-catalog.md
+      - Resource Explorer: governance/resource-explorer.md
+      - AWS CAF: governance/caf.md
