@@ -39,6 +39,8 @@ nav:
       - Amazon GuardDuty: security/guardduty.md
       - Seguridad en la red: security/network-security.md
       - KMS: security/kms.md
+      - Artifact: security/artifact.md
+      - Security Hub: security/security-hub.md
 
   - Compute:
       - EC2: compute/ec2.md
