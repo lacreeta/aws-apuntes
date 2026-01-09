@@ -77,6 +77,12 @@ nav:
   - Billing:
       - Costes y facturación: billing/billing.md
 
+  - Migraciones:
+      - AWS DMS: migrations/dms.md
+      - DataSync: migrations/datasync.md
+      - Aplication Migration Service: migrations/application-migration-service.md
+      - Snowball: migrations/snowball.md
+
   - Gobernanza:
       - CloudFormation: governance/cloudformation.md
       - AWS Organizations: governance/organizations.md
