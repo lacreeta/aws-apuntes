@@ -60,8 +60,15 @@ nav:
       - Systems Manager: operations/systems-manager.md
       - Monitorización: monitoring/monitoring.md
 
-  - Analytics / BI:
+  - BI:
       - Amazon QuickSight: BI/quicksight.md
+
+  - Analytics:
+      - Kinesis: analytics/kinesis.md
+      - MSK: analytics/msk.md
+      - Athena: analytics/athena.md
+      - Glue: analytics/glue.md
+      - EMR: analytics/emr.md
 
   - Billing:
       - Costes y facturación: billing/billing.md
