@@ -72,3 +72,6 @@ nav:
       - Service Catalog: governance/service-catalog.md
       - Resource Explorer: governance/resource-explorer.md
       - AWS CAF: governance/caf.md
+
+  - Support Plans:
+      - Support: support/support.md
