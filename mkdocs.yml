@@ -41,6 +41,8 @@ nav:
       - KMS: security/kms.md
       - Artifact: security/artifact.md
       - Security Hub: security/security-hub.md
+      - Amazon Detective: security/detective.md
+      - AWS Inspector: security/inspector.md
 
   - Compute:
       - EC2: compute/ec2.md
@@ -94,6 +96,3 @@ nav:
 
   - Support Plans:
       - Support: support/support.md
-
-  - Cheatsheet:
-      - Repaso: cheatsheet.md
