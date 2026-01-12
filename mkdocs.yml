@@ -51,6 +51,7 @@ nav:
       - GuardDuty: security/guardduty.md
       - Inspector: security/inspector.md
       - Detective: security/detective.md
+      - Audit Manager: security/audit-manager.md
       - Security Hub: security/security-hub.md
       - Network Security (WAF / Shield): security/network-security.md
       - Compliance (Artifact): security/artifact.md
