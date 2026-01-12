@@ -76,6 +76,14 @@ nav:
       - Kinesis: analytics/kinesis.md
       - QuickSight: analytics/quicksight.md
 
+  - Machine Learning & AI:
+      - Sagemaker: ML/sagemaker.md
+      - Rekognition: ML/rekognition.md
+      - Comprehend: ML/comprehend.md
+      - Lex: ML/lex.md
+      - Polly: ML/polly.md
+      - Personalize: ML/personalize.md
+
   - Migration:
       - DMS: migrations/dms.md
       - DataSync: migrations/datasync.md
