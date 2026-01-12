@@ -81,6 +81,7 @@ nav:
       - DataSync: migrations/datasync.md
       - Application Migration Service: migrations/application-migration-service.md
       - Snowball: migrations/snowball.md
+      - Migration Evaluator (Opcional): migrations/migration-evaluator.md
 
   - Cost & Support:
       - Billing: cost/billing.md
