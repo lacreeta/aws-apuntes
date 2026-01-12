@@ -6,17 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Apuntes de AWS orientados a la certificación Cloud Practitioner con equivalencias a Azure">
+        <meta name="description" content="Apuntes de AWS orientados a la certificación Cloud Practitioner">
       
       
         <meta name="author" content="Andrés González">
       
       
       
-        <link rel="prev" href="../security-hub/">
+        <link rel="prev" href="../inspector/">
       
       
-        <link rel="next" href="../inspector/">
+        <link rel="next" href="../security-hub/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Amazon Detective - AWS Cloud Practitioner Notes</title>
+        <title>Detective - AWS Cloud Practitioner Notes</title>
       
     
     
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Amazon Detective
+              Detective
             
           </span>
         </div>
@@ -173,67 +173,6 @@
 <nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
-        
-  
-  
-    
-  
-  Inicio
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../fundamentals/regions-az/" class="md-tabs__link">
-          
-  
-  
-  Fundamentos
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-  
-  
-    
-    
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../iam/" class="md-tabs__link">
-          
-  
-  
-  Seguridad
-
-        </a>
-      </li>
-    
-  
-
       
         
   
@@ -319,15 +258,17 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../operations/systems-manager/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../iam/" class="md-tabs__link">
           
   
   
-  Operaciones
+  Security
 
         </a>
       </li>
@@ -343,11 +284,11 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../BI/quicksight/" class="md-tabs__link">
+        <a href="../../operations/cloudwatch/" class="md-tabs__link">
           
   
   
-  BI
+  Operations & Governance
 
         </a>
       </li>
@@ -363,7 +304,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../analytics/kinesis/" class="md-tabs__link">
+        <a href="../../analytics/athena/" class="md-tabs__link">
           
   
   
@@ -383,11 +324,11 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../billing/billing/" class="md-tabs__link">
+        <a href="../../migrations/dms.md" class="md-tabs__link">
           
   
   
-  Billing
+  Migration
 
         </a>
       </li>
@@ -403,51 +344,11 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../migrations/dms/" class="md-tabs__link">
+        <a href="../../cost/billing/" class="md-tabs__link">
           
   
   
-  Migraciones
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../governance/cloudformation/" class="md-tabs__link">
-          
-  
-  
-  Gobernanza
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../support/support/" class="md-tabs__link">
-          
-  
-  
-  Support Plans
+  Cost & Support
 
         </a>
       </li>
@@ -494,15 +395,69 @@
   
   
   
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Compute
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Compute
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../compute/ec2/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Inicio
+    EC2
   
 
     
@@ -511,6 +466,126 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compute/elastic-beanstalk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Elastic Beanstalk
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compute/lambda.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lambda
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compute/containers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Containers (ECS / EKS / Fargate)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compute/serverless/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Serverless Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -547,7 +622,7 @@
   <span class="md-ellipsis">
     
   
-    Fundamentos
+    Storage
   
 
     
@@ -563,7 +638,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Fundamentos
+    Storage
   
 
           </label>
@@ -576,14 +651,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fundamentals/regions-az/" class="md-nav__link">
+      <a href="../../storage/s3/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Regiones y AZ
+    S3
   
 
     
@@ -604,14 +679,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fundamentals/shared-responsibility/" class="md-nav__link">
+      <a href="../../storage/ebs/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Shared Responsibility Model
+    EBS
   
 
     
@@ -632,14 +707,472 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fundamentals/well-architected/" class="md-nav__link">
+      <a href="../../storage/efs/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Well-Architected Framework
+    EFS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../storage/glacier/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glacier
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Databases
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Databases
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../databases/databases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bases de datos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Networking
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Networking
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../networking/vpc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VPC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../networking/subnets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Subnets / IGW / NAT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../networking/load-balancers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Load Balancers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../networking/route-53/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Route 53
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../networking/cloudfront/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CloudFront
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../networking/direct-connect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Direct Connect
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../networking/vpn/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VPN
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../networking/transit-gateway/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transit Gateway
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../networking/privatelink/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PrivateLink
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../networking/global-accelerator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Global Accelerator
   
 
     
@@ -685,17 +1218,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
     
   
-    Seguridad
+    Security
   
 
     
@@ -706,12 +1239,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Seguridad
+    Security
   
 
           </label>
@@ -752,6 +1285,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../kms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Encryption (KMS)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../macie/" class="md-nav__link">
         
   
@@ -759,7 +1320,7 @@
   <span class="md-ellipsis">
     
   
-    Amazon Macie
+    Macie
   
 
     
@@ -787,7 +1348,7 @@
   <span class="md-ellipsis">
     
   
-    Amazon GuardDuty
+    GuardDuty
   
 
     
@@ -808,98 +1369,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../network-security/" class="md-nav__link">
+      <a href="../inspector/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Seguridad en la red
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../kms/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    KMS
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../artifact/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Artifact
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../security-hub/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Security Hub
+    Inspector
   
 
     
@@ -936,7 +1413,7 @@
   <span class="md-ellipsis">
     
   
-    Amazon Detective
+    Detective
   
 
     
@@ -954,7 +1431,7 @@
   <span class="md-ellipsis">
     
   
-    Amazon Detective
+    Detective
   
 
     
@@ -1072,103 +1549,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../inspector/" class="md-nav__link">
+      <a href="../security-hub/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    AWS Inspector
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Compute
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Compute
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../compute/ec2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    EC2
+    Security Hub
   
 
     
@@ -1189,14 +1577,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../compute/elastic-beanstalk/" class="md-nav__link">
+      <a href="../network-security/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Elastic Beanstalk
+    Network Security (WAF / Shield)
   
 
     
@@ -1217,14 +1605,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../compute/serverless/" class="md-nav__link">
+      <a href="../artifact/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Serverless
+    Compliance (Artifact)
   
 
     
@@ -1245,187 +1633,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../compute/containers/" class="md-nav__link">
+      <a href="../shared-responsibility/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Contenedores
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Storage
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Storage
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../storage/s3/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Amazon S3
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../storage/ebs/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Amazon EBS
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../storage/efs/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Amazon EFS
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../storage/glacier/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Amazon S3 Glacier
+    Shared Responsibility Model
   
 
     
@@ -1478,7 +1693,7 @@
   <span class="md-ellipsis">
     
   
-    Databases
+    Operations & Governance
   
 
     
@@ -1494,7 +1709,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Databases
+    Operations & Governance
   
 
           </label>
@@ -1507,14 +1722,266 @@
   
   
     <li class="md-nav__item">
-      <a href="../../databases/databases/" class="md-nav__link">
+      <a href="../../operations/cloudwatch/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Bases de datos
+    CloudWatch
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operations/config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS Config
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operations/systems-manager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Systems Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operations/cloudformation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CloudFormation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operations/resource-explorer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resource Explorer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operations/organizations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS Organizations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operations/service-catalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Service Catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operations/well-architected/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Well-Architected Framework
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operations/caf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cloud Adoption Framework (CAF)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operations/x-ray/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    X-RAY
   
 
     
@@ -1567,7 +2034,7 @@
   <span class="md-ellipsis">
     
   
-    Networking
+    Analytics
   
 
     
@@ -1583,418 +2050,11 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Networking
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../networking/vpc/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    VPC
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../networking/connectivity/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Conectividad
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../networking/load-balancers/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Load Balancers
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Operaciones
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Operaciones
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../operations/systems-manager/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Systems Manager
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../monitoring/monitoring/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Monitorización
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
-        
-          
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    BI
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    BI
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../BI/quicksight/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Amazon QuickSight
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
-        
-          
-          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Analytics
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
     Analytics
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../analytics/kinesis/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Kinesis
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../analytics/msk/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    MSK
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -2080,46 +2140,21 @@
 
               
             
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
+              
+                
   
   
   
   
-    
-    
-    
-    
-      
-      
+    <li class="md-nav__item">
+      <a href="../../analytics/msk/" class="md-nav__link">
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11" >
-        
-          
-          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
-            
   
   
   <span class="md-ellipsis">
     
   
-    Billing
+    MSK
   
 
     
@@ -2127,19 +2162,11 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_11">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Billing
+      </a>
+    </li>
   
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+              
             
               
                 
@@ -2148,14 +2175,42 @@
   
   
     <li class="md-nav__item">
-      <a href="../../billing/billing/" class="md-nav__link">
+      <a href="../../analytics/kinesis/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Costes y facturación
+    Kinesis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analytics/quicksight/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    QuickSight
   
 
     
@@ -2198,17 +2253,17 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_12" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
         
           
-          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-    Migraciones
+    Migration
   
 
     
@@ -2219,12 +2274,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_12">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Migraciones
+    Migration
   
 
           </label>
@@ -2237,14 +2292,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../migrations/dms/" class="md-nav__link">
+      <a href="../../migrations/dms.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    AWS DMS
+    DMS
   
 
     
@@ -2265,7 +2320,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../migrations/datasync/" class="md-nav__link">
+      <a href="../../migrations/datasync.md" class="md-nav__link">
         
   
   
@@ -2293,14 +2348,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../migrations/application-migration-service/" class="md-nav__link">
+      <a href="../../migrations/application-migration-service.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Aplication Migration Service
+    Application Migration Service
   
 
     
@@ -2321,7 +2376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../migrations/snowball/" class="md-nav__link">
+      <a href="../../migrations/snowball.md" class="md-nav__link">
         
   
   
@@ -2371,17 +2426,17 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_13" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
         
           
-          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-    Gobernanza
+    Cost & Support
   
 
     
@@ -2392,12 +2447,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_13">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Gobernanza
+    Cost & Support
   
 
           </label>
@@ -2410,14 +2465,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../governance/cloudformation/" class="md-nav__link">
+      <a href="../../cost/billing/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    CloudFormation
+    Billing
   
 
     
@@ -2438,14 +2493,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../governance/organizations/" class="md-nav__link">
+      <a href="../../cost/cost-explorer/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    AWS Organizations
+    Cost Explorer
   
 
     
@@ -2466,14 +2521,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../governance/service-catalog/" class="md-nav__link">
+      <a href="../../cost/budgets/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Service Catalog
+    Budgets
   
 
     
@@ -2494,14 +2549,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../governance/resource-explorer/" class="md-nav__link">
+      <a href="../../support/trusted-advisor/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Resource Explorer
+    Trusted Advisor
   
 
     
@@ -2514,95 +2569,6 @@
   
 
               
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../governance/caf/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    AWS CAF
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_14" >
-        
-          
-          <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Support Plans
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_14">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Support Plans
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -2618,7 +2584,35 @@
   <span class="md-ellipsis">
     
   
-    Support
+    Support Plans
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/health-dashboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Health Dashboard
   
 
     
@@ -2759,41 +2753,41 @@
 
 
 
-<h1 id="amazon-detective">Amazon Detective<a class="headerlink" href="#amazon-detective" title="Permanent link">&para;</a></h1>
+<h1 id="amazon-detective">Amazon Detective</h1>
 <p>Amazon Detective es un servicio que <strong>analiza y correlaciona datos de seguridad</strong> para <strong>investigar y entender incidentes de seguridad</strong>.</p>
-<h2 id="que-problema-resuelve">Qué problema resuelve<a class="headerlink" href="#que-problema-resuelve" title="Permanent link">&para;</a></h2>
+<h2 id="que-problema-resuelve">Qué problema resuelve</h2>
 <p>Facilita la <strong>investigación de incidentes</strong> mostrando cómo y por qué ocurrió un evento de seguridad.</p>
-<h2 id="que-hace">Qué hace<a class="headerlink" href="#que-hace" title="Permanent link">&para;</a></h2>
+<h2 id="que-hace">Qué hace</h2>
 <ul>
 <li>Analiza datos de seguridad automáticamente</li>
 <li>Correlaciona eventos de múltiples fuentes</li>
 <li>Ayuda a investigar comportamientos sospechosos</li>
 </ul>
-<h2 id="datos-que-usa">Datos que usa<a class="headerlink" href="#datos-que-usa" title="Permanent link">&para;</a></h2>
+<h2 id="datos-que-usa">Datos que usa</h2>
 <ul>
 <li>AWS CloudTrail</li>
 <li>Amazon VPC Flow Logs</li>
 <li>Amazon GuardDuty findings</li>
 </ul>
-<h2 id="casos-de-uso">Casos de uso<a class="headerlink" href="#casos-de-uso" title="Permanent link">&para;</a></h2>
+<h2 id="casos-de-uso">Casos de uso</h2>
 <ul>
 <li>Investigación de incidentes</li>
 <li>Análisis de causa raíz</li>
 <li>Comprensión de ataques o accesos sospechosos</li>
 </ul>
-<h2 id="pistas-de-examen">Pistas de examen<a class="headerlink" href="#pistas-de-examen" title="Permanent link">&para;</a></h2>
+<h2 id="pistas-de-examen">Pistas de examen</h2>
 <ul>
 <li>Investigate security issues</li>
 <li>Analyze security events</li>
 <li>Root cause analysis</li>
 </ul>
-<h2 id="que-no-es">Qué NO es<a class="headerlink" href="#que-no-es" title="Permanent link">&para;</a></h2>
+<h2 id="que-no-es">Qué NO es</h2>
 <ul>
 <li>No previene ataques</li>
 <li>No bloquea tráfico</li>
 <li>No es un firewall</li>
 </ul>
-<h2 id="resumen-rapido">Resumen rápido<a class="headerlink" href="#resumen-rapido" title="Permanent link">&para;</a></h2>
+<h2 id="resumen-rapido">Resumen rápido</h2>
 <p>Amazon Detective = <strong>investigar y entender incidentes de seguridad</strong></p>
 
 
