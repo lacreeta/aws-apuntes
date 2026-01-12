@@ -20,7 +20,6 @@ nav:
   - Compute:
       - EC2: compute/ec2.md
       - Elastic Beanstalk: compute/elastic-beanstalk.md
-      - Lambda: compute/lambda.md
       - Containers (ECS / EKS / Fargate): compute/containers.md
       - Serverless Overview: compute/serverless.md
 
