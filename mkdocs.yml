@@ -1,5 +1,5 @@
 site_name: AWS Cloud Practitioner Notes
-site_description: Apuntes de AWS orientados a la certificación Cloud Practitioner con equivalencias a Azure
+site_description: Apuntes de AWS orientados a la certificación Cloud Practitioner
 site_author: Andrés González
 
 theme:
@@ -15,84 +15,78 @@ theme:
     - search.share
     - content.code.copy
 
-markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.highlight
-  - pymdownx.inlinehilite
-  - pymdownx.tabbed
-  - toc:
-      permalink: true
-
 nav:
-  - Inicio: index.md
-
-  - Fundamentos:
-      - Regiones y AZ: fundamentals/regions-az.md
-      - Shared Responsibility Model: fundamentals/shared-responsibility.md
-      - Well-Architected Framework: fundamentals/well-architected.md
-
-  - Seguridad:
-      - IAM: security/iam.md
-      - Amazon Macie: security/macie.md
-      - Amazon GuardDuty: security/guardduty.md
-      - Seguridad en la red: security/network-security.md
-      - KMS: security/kms.md
-      - Artifact: security/artifact.md
-      - Security Hub: security/security-hub.md
-      - Amazon Detective: security/detective.md
-      - AWS Inspector: security/inspector.md
 
   - Compute:
       - EC2: compute/ec2.md
       - Elastic Beanstalk: compute/elastic-beanstalk.md
-      - Serverless: compute/serverless.md
-      - Contenedores: compute/containers.md
+      - Lambda: compute/lambda.md
+      - Containers (ECS / EKS / Fargate): compute/containers.md
+      - Serverless Overview: compute/serverless.md
 
   - Storage:
-      - Amazon S3: storage/s3.md
-      - Amazon EBS: storage/ebs.md
-      - Amazon EFS: storage/efs.md
-      - Amazon S3 Glacier: storage/glacier.md
+      - S3: storage/s3.md
+      - EBS: storage/ebs.md
+      - EFS: storage/efs.md
+      - Glacier: storage/glacier.md
 
   - Databases:
       - Bases de datos: databases/databases.md
 
   - Networking:
       - VPC: networking/vpc.md
-      - Conectividad: networking/connectivity.md
+      - Subnets / IGW / NAT: networking/subnets.md
       - Load Balancers: networking/load-balancers.md
+      - Route 53: networking/route-53.md
+      - CloudFront: networking/cloudfront.md
+      - Direct Connect: networking/direct-connect.md
+      - VPN: networking/vpn.md
+      - Transit Gateway: networking/transit-gateway.md
+      - PrivateLink: networking/privatelink.md
+      - Global Accelerator: networking/global-accelerator.md
 
-  - Operaciones:
+  - Security:
+      - IAM: security/iam.md
+      - Encryption (KMS): security/kms.md
+      - Macie: security/macie.md
+      - GuardDuty: security/guardduty.md
+      - Inspector: security/inspector.md
+      - Detective: security/detective.md
+      - Security Hub: security/security-hub.md
+      - Network Security (WAF / Shield): security/network-security.md
+      - Compliance (Artifact): security/artifact.md
+      - Shared Responsibility Model: security/shared-responsibility.md
+
+  - Operations & Governance:
+      - CloudWatch: operations/cloudwatch.md
+      - AWS Config: operations/config.md
       - Systems Manager: operations/systems-manager.md
-      - Monitorización: monitoring/monitoring.md
-
-  - BI:
-      - Amazon QuickSight: BI/quicksight.md
+      - CloudFormation: operations/cloudformation.md
+      - Resource Explorer: operations/resource-explorer.md
+      - AWS Organizations: operations/organizations.md
+      - Service Catalog: operations/service-catalog.md
+      - Well-Architected Framework: operations/well-architected.md
+      - Cloud Adoption Framework (CAF): operations/caf.md
+      - X-RAY: operations/x-ray.md
 
   - Analytics:
-      - Kinesis: analytics/kinesis.md
-      - MSK: analytics/msk.md
       - Athena: analytics/athena.md
       - Glue: analytics/glue.md
       - EMR: analytics/emr.md
+      - MSK: analytics/msk.md
+      - Kinesis: analytics/kinesis.md
+      - QuickSight: analytics/quicksight.md
 
-  - Billing:
-      - Costes y facturación: billing/billing.md
-
-  - Migraciones:
-      - AWS DMS: migrations/dms.md
+  - Migration:
+      - DMS: migrations/dms.md
       - DataSync: migrations/datasync.md
-      - Aplication Migration Service: migrations/application-migration-service.md
+      - Application Migration Service: migrations/application-migration-service.md
       - Snowball: migrations/snowball.md
 
-  - Gobernanza:
-      - CloudFormation: governance/cloudformation.md
-      - AWS Organizations: governance/organizations.md
-      - Service Catalog: governance/service-catalog.md
-      - Resource Explorer: governance/resource-explorer.md
-      - AWS CAF: governance/caf.md
-
-  - Support Plans:
-      - Support: support/support.md
+  - Cost & Support:
+      - Billing: cost/billing.md
+      - Cost Explorer: cost/cost-explorer.md
+      - Budgets: cost/budgets.md
+      - Trusted Advisor: support/trusted-advisor.md
+      - Support Plans: support/support.md
+      - Health Dashboard: support/health-dashboard.md

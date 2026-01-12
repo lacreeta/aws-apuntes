@@ -1,59 +1,48 @@
-# Elastic Load Balancing en AWS
+# Elastic Load Balancing (ELB)
 
-Servicios para distribuir tráfico entre recursos.
+Servicios para **distribuir tráfico** entre múltiples recursos y mejorar disponibilidad.
 
 ---
 
 ## Application Load Balancer (ALB)
 
-**Capa OSI:** Nivel 7 (Aplicación)  
-**Protocolos:** HTTP, HTTPS, WebSocket
-
-### Características
-- Enrutamiento por host y ruta.
-- Ideal para aplicaciones web y APIs.
-- Integración con AWS WAF.
+- Capa OSI: **Nivel 7**
+- Protocolos: HTTP / HTTPS
+- Enrutamiento por host y path.
 
 ### Casos de uso
-- Microservicios
-- Aplicaciones web modernas
-- ECS / EKS
+- Aplicaciones web.
+- APIs.
+- Microservicios.
 
 ---
 
 ## Network Load Balancer (NLB)
 
-**Capa OSI:** Nivel 4 (Transporte)  
-**Protocolos:** TCP, UDP, TLS
-
-### Características
+- Capa OSI: **Nivel 4**
+- Protocolos: TCP / UDP / TLS
 - Ultra baja latencia.
-- IP estática por AZ.
-- Alto rendimiento.
 
 ### Casos de uso
-- Gaming
-- Streaming
-- IoT
+- Alto rendimiento.
+- Gaming.
+- Streaming.
 
 ---
 
 ## Gateway Load Balancer (GWLB)
 
-**Capa OSI:** Nivel 3 (Red)
-
-### Características
+- Capa OSI: **Nivel 3**
 - Integración con firewalls e IDS/IPS.
-- Inspección de tráfico.
-
-### Casos de uso
-- Seguridad avanzada
-- Network Virtual Appliances
 
 ---
 
-## Claves de examen
+## Pistas de examen
+- ALB = capa 7.
+- NLB = capa 4.
+- ELB mejora alta disponibilidad.
 
-- ALB = capa 7
-- NLB = capa 4
-- GWLB = seguridad
+---
+
+## Resumen rápido
+Load Balancer = **distribuir tráfico y mejorar resiliencia**

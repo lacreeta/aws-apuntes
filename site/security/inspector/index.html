@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="../shared-responsibility/">
+        <link rel="prev" href="../detective/">
       
       
-        <link rel="next" href="../../security/iam/">
+        <link rel="next" href="../../compute/ec2/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Well-Architected Framework - AWS Cloud Practitioner Notes</title>
+        <title>AWS Inspector - AWS Cloud Practitioner Notes</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#aws-well-architected-framework" class="md-skip">
+        <a href="#aws-inspector" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Well-Architected Framework
+              AWS Inspector
             
           </span>
         </div>
@@ -197,13 +197,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../regions-az/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../fundamentals/regions-az/" class="md-tabs__link">
           
   
   
@@ -219,11 +217,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../security/iam/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../iam/" class="md-tabs__link">
           
   
   
@@ -519,31 +519,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -561,7 +558,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -579,7 +576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../regions-az/" class="md-nav__link">
+      <a href="../../fundamentals/regions-az/" class="md-nav__link">
         
   
   
@@ -607,7 +604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../shared-responsibility/" class="md-nav__link">
+      <a href="../../fundamentals/shared-responsibility/" class="md-nav__link">
         
   
   
@@ -632,35 +629,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Well-Architected Framework
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../fundamentals/well-architected/" class="md-nav__link">
         
   
   
@@ -676,129 +648,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#aws-well-architected-framework" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        AWS Well-Architected Framework
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#los-6-pilares-del-well-architected-framework" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Los 6 pilares del Well-Architected Framework
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Los 6 pilares del Well-Architected Framework">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-operational-excellence" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Operational Excellence
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-security" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Security
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-reliability" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Reliability
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-performance-efficiency" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Performance Efficiency
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-cost-optimization" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Cost Optimization
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-sustainability" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6. Sustainability
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#claves-de-examen-well-architected" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Claves de examen Well-Architected
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -815,28 +664,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -854,7 +706,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -872,7 +724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../security/iam/" class="md-nav__link">
+      <a href="../iam/" class="md-nav__link">
         
   
   
@@ -900,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../security/macie/" class="md-nav__link">
+      <a href="../macie/" class="md-nav__link">
         
   
   
@@ -928,7 +780,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../security/guardduty/" class="md-nav__link">
+      <a href="../guardduty/" class="md-nav__link">
         
   
   
@@ -956,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../security/network-security/" class="md-nav__link">
+      <a href="../network-security/" class="md-nav__link">
         
   
   
@@ -984,7 +836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../security/kms/" class="md-nav__link">
+      <a href="../kms/" class="md-nav__link">
         
   
   
@@ -1012,7 +864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../security/artifact/" class="md-nav__link">
+      <a href="../artifact/" class="md-nav__link">
         
   
   
@@ -1040,7 +892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../security/security-hub/" class="md-nav__link">
+      <a href="../security-hub/" class="md-nav__link">
         
   
   
@@ -1068,7 +920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../security/detective/" class="md-nav__link">
+      <a href="../detective/" class="md-nav__link">
         
   
   
@@ -1093,10 +945,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../security/inspector/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS Inspector
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1112,6 +991,103 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-problema-resuelve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué problema resuelve
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-analiza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué analiza
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-detecta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué detecta
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#casos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Casos de uso
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pistas-de-examen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pistas de examen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-no-es" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué NO es
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumen-rapido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumen rápido
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2680,6 +2656,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2688,10 +2666,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#aws-well-architected-framework" class="md-nav__link">
+  <a href="#que-problema-resuelve" class="md-nav__link">
     <span class="md-ellipsis">
       
-        AWS Well-Architected Framework
+        Qué problema resuelve
       
     </span>
   </a>
@@ -2699,93 +2677,65 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#los-6-pilares-del-well-architected-framework" class="md-nav__link">
+  <a href="#que-analiza" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Los 6 pilares del Well-Architected Framework
+        Qué analiza
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Los 6 pilares del Well-Architected Framework">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-operational-excellence" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Operational Excellence
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-security" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Security
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-reliability" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Reliability
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-performance-efficiency" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Performance Efficiency
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-cost-optimization" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Cost Optimization
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-sustainability" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6. Sustainability
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#claves-de-examen-well-architected" class="md-nav__link">
+  <a href="#que-detecta" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Claves de examen Well-Architected
+        Qué detecta
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#casos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Casos de uso
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pistas-de-examen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pistas de examen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-no-es" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué NO es
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumen-rapido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumen rápido
       
     </span>
   </a>
@@ -2809,58 +2759,42 @@
 
 
 
-  <h1>Well-Architected Framework</h1>
-
-<h2 id="aws-well-architected-framework">AWS Well-Architected Framework<a class="headerlink" href="#aws-well-architected-framework" title="Permanent link">&para;</a></h2>
-<p>El AWS Well-Architected Framework es un conjunto de <strong>buenas prácticas</strong> para diseñar arquitecturas seguras, eficientes y resilientes en AWS.</p>
-<p>No es un servicio, es un <strong>marco de referencia</strong>.</p>
-<p>Equivalente en Azure: <strong>Azure Well-Architected Framework</strong></p>
-<hr />
-<h2 id="los-6-pilares-del-well-architected-framework">Los 6 pilares del Well-Architected Framework<a class="headerlink" href="#los-6-pilares-del-well-architected-framework" title="Permanent link">&para;</a></h2>
-<h3 id="1-operational-excellence">1. Operational Excellence<a class="headerlink" href="#1-operational-excellence" title="Permanent link">&para;</a></h3>
+<h1 id="aws-inspector">AWS Inspector<a class="headerlink" href="#aws-inspector" title="Permanent link">&para;</a></h1>
+<p>AWS Inspector es un servicio que <strong>evalúa automáticamente vulnerabilidades y exposiciones de seguridad</strong> en workloads de AWS.</p>
+<h2 id="que-problema-resuelve">Qué problema resuelve<a class="headerlink" href="#que-problema-resuelve" title="Permanent link">&para;</a></h2>
+<p>Detecta <strong>vulnerabilidades, malas configuraciones y riesgos de seguridad</strong> en instancias y contenedores.</p>
+<h2 id="que-analiza">Qué analiza<a class="headerlink" href="#que-analiza" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Automatización.</li>
-<li>Monitorización.</li>
-<li>Mejora continua.</li>
+<li>Instancias EC2</li>
+<li>Imágenes de contenedores (ECR)</li>
+<li>Workloads en ejecución</li>
 </ul>
-<h3 id="2-security">2. Security<a class="headerlink" href="#2-security" title="Permanent link">&para;</a></h3>
+<h2 id="que-detecta">Qué detecta<a class="headerlink" href="#que-detecta" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Gestión de identidades.</li>
-<li>Protección de datos.</li>
-<li>Respuesta a incidentes.</li>
+<li>Vulnerabilidades de software (CVEs)</li>
+<li>Configuraciones inseguras</li>
+<li>Exposición a riesgos conocidos</li>
 </ul>
-<h3 id="3-reliability">3. Reliability<a class="headerlink" href="#3-reliability" title="Permanent link">&para;</a></h3>
+<h2 id="casos-de-uso">Casos de uso<a class="headerlink" href="#casos-de-uso" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Alta disponibilidad.</li>
-<li>Recuperación ante fallos.</li>
-<li>Diseño tolerante a errores.</li>
+<li>Escaneo de seguridad</li>
+<li>Gestión de vulnerabilidades</li>
+<li>Mejora de la postura de seguridad</li>
 </ul>
-<h3 id="4-performance-efficiency">4. Performance Efficiency<a class="headerlink" href="#4-performance-efficiency" title="Permanent link">&para;</a></h3>
+<h2 id="pistas-de-examen">Pistas de examen<a class="headerlink" href="#pistas-de-examen" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Uso eficiente de recursos.</li>
-<li>Escalabilidad.</li>
-<li>Elección correcta de servicios.</li>
+<li>Vulnerability assessment</li>
+<li>Security scanning</li>
+<li>CVEs</li>
 </ul>
-<h3 id="5-cost-optimization">5. Cost Optimization<a class="headerlink" href="#5-cost-optimization" title="Permanent link">&para;</a></h3>
+<h2 id="que-no-es">Qué NO es<a class="headerlink" href="#que-no-es" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Pago por uso.</li>
-<li>Eliminación de recursos no utilizados.</li>
-<li>Uso de modelos de ahorro.</li>
+<li>No investiga incidentes</li>
+<li>No bloquea ataques</li>
+<li>No es compliance documentation</li>
 </ul>
-<h3 id="6-sustainability">6. Sustainability<a class="headerlink" href="#6-sustainability" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Minimizar impacto ambiental.</li>
-<li>Uso eficiente de recursos.</li>
-<li>Escalado bajo demanda.</li>
-</ul>
-<hr />
-<h2 id="claves-de-examen-well-architected">Claves de examen Well-Architected<a class="headerlink" href="#claves-de-examen-well-architected" title="Permanent link">&para;</a></h2>
-<ul>
-<li>No es un servicio.</li>
-<li>Tiene 6 pilares.</li>
-<li>Se usa para evaluar arquitecturas.</li>
-<li>Cost Optimization es uno de los pilares.</li>
-</ul>
+<h2 id="resumen-rapido">Resumen rápido<a class="headerlink" href="#resumen-rapido" title="Permanent link">&para;</a></h2>
+<p>AWS Inspector = <strong>detección de vulnerabilidades</strong></p>
 
 
 
