@@ -1,0 +1,9 @@
+setup.py
+mkdocs_exam_checklist.egg-info/PKG-INFO
+mkdocs_exam_checklist.egg-info/SOURCES.txt
+mkdocs_exam_checklist.egg-info/dependency_links.txt
+mkdocs_exam_checklist.egg-info/entry_points.txt
+mkdocs_exam_checklist.egg-info/requires.txt
+mkdocs_exam_checklist.egg-info/top_level.txt
+plugins/__init__.py
+plugins/exam_checklist.py
