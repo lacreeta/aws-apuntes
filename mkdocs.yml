@@ -1,101 +1,226 @@
-site_name: AWS Cloud Practitioner Notes
-site_description: Apuntes de AWS orientados a la certificación Cloud Practitioner
+site_name: AWS Cloud Practitioner
+site_description: Guía completa para la certificación AWS Cloud Practitioner (CLF-C02)
 site_author: Andrés González
+site_url: https://github.com/lacreeta/aws-apuntes
 
 theme:
   name: material
   language: es
+  
+  # Iconos personalizados
+  icon:
+    logo: material/cloud
+    repo: fontawesome/brands/github
+  
+  # Paleta de colores
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep orange
+      accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo oscuro
+    
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep orange
+      accent: orange
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo claro
+  
+  # Font personalizada
+  font:
+    text: Roboto
+    code: Roboto Mono
+  
+  # Features
   features:
+    - announce.dismiss
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - navigation.footer
+    - navigation.indexes
     - navigation.instant
-    - navigation.tracking
-    - navigation.tabs
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.path
     - navigation.sections
-    - navigation.expand
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
     - search.highlight
     - search.share
-    - content.code.copy
+    - search.suggest
+    - toc.follow
 
+plugins:
+  - search:
+      lang: es
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+
+extra_css:
+  - stylesheets/extra.css
+  
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Customización extra
+extra:
+  generator: false  # Quita "Made with Material for MkDocs"
+  
+  # Social links
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/lacreeta
+      name: GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/andres-gonzalez-a53bb929a/
+      name: LinkedIn
+  
+  # Configuración de consentimiento de cookies
+  consent:
+    title: Consentimiento de cookies
+    description: >-
+      Usamos cookies para reconocer tus visitas y preferencias, así como para
+      medir la efectividad de nuestra documentación.
+
+# Footer
+copyright: >
+  Copyright &copy; 2026 Andrés González –
+  <a href="#__consent">Configuración de cookies</a>
+
+# Navegación con iconos
 nav:
+  - 🏠 Inicio: index.md
+  
+  - 📚 Guía de Estudio:
+      - Introducción a AWS: introduction.md
+      - Infraestructura Global: global-infrastructure.md
+      - Tips para el Examen: exam-tips.md
 
-  - Compute:
-      - EC2: compute/ec2.md
-      - Elastic Beanstalk: compute/elastic-beanstalk.md
-      - Containers (ECS / EKS / Fargate): compute/containers.md
-      - Serverless Overview: compute/serverless.md
+  - 💻 Compute:
+      - compute/ec2.md
+      - compute/elastic-beanstalk.md
+      - compute/containers.md
+      - compute/serverless.md
 
-  - Storage:
-      - S3: storage/s3.md
-      - EBS: storage/ebs.md
-      - EFS: storage/efs.md
-      - Glacier: storage/glacier.md
+  - 💾 Storage:
+      - storage/s3.md
+      - storage/ebs.md
+      - storage/efs.md
+      - storage/glacier.md
 
-  - Databases:
-      - Bases de datos: databases/databases.md
+  - 🗄️ Databases:
+      - databases/databases.md
 
-  - Networking:
-      - VPC: networking/vpc.md
-      - Subnets / IGW / NAT: networking/subnets.md
-      - Load Balancers: networking/load-balancers.md
-      - Route 53: networking/route-53.md
-      - CloudFront: networking/cloudfront.md
-      - Direct Connect: networking/direct-connect.md
-      - VPN: networking/vpn.md
-      - Transit Gateway: networking/transit-gateway.md
-      - PrivateLink: networking/privatelink.md
-      - Global Accelerator: networking/global-accelerator.md
+  - 🌐 Networking:
+      - networking/vpc.md
+      - networking/subnets.md
+      - networking/load-balancers.md
+      - networking/route-53.md
+      - networking/cloudfront.md
+      - networking/direct-connect.md
+      - networking/vpn.md
+      - networking/transit-gateway.md
+      - networking/privatelink.md
+      - networking/global-accelerator.md
 
-  - Security:
-      - IAM: security/iam.md
-      - Encryption (KMS): security/kms.md
-      - Macie: security/macie.md
-      - GuardDuty: security/guardduty.md
-      - Inspector: security/inspector.md
-      - Detective: security/detective.md
-      - Audit Manager: security/audit-manager.md
-      - Security Hub: security/security-hub.md
-      - Network Security (WAF / Shield): security/network-security.md
-      - Compliance (Artifact): security/artifact.md
-      - Shared Responsibility Model: security/shared-responsibility.md
+  - 🔒 Security:
+      - security/iam.md
+      - security/shared-responsibility.md
+      - security/kms.md
+      - security/guardduty.md
+      - security/inspector.md
+      - security/macie.md
+      - security/detective.md
+      - security/security-hub.md
+      - security/network-security.md
+      - security/artifact.md
+      - security/audit-manager.md
 
-  - Operations & Governance:
-      - CloudWatch: operations/cloudwatch.md
-      - AWS Config: operations/config.md
-      - Systems Manager: operations/systems-manager.md
-      - CloudFormation: operations/cloudformation.md
-      - Resource Explorer: operations/resource-explorer.md
-      - AWS Organizations: operations/organizations.md
-      - Service Catalog: operations/service-catalog.md
-      - Well-Architected Framework: operations/well-architected.md
-      - Cloud Adoption Framework (CAF): operations/caf.md
-      - X-RAY: operations/x-ray.md
+  - ⚙️ Operations:
+      - operations/cloudwatch.md
+      - operations/cloudformation.md
+      - operations/config.md
+      - operations/systems-manager.md
+      - operations/organizations.md
+      - operations/well-architected.md
+      - operations/caf.md
+      - operations/x-ray.md
+      - operations/service-catalog.md
+      - operations/resource-explorer.md
 
-  - Analytics:
-      - Athena: analytics/athena.md
-      - Glue: analytics/glue.md
-      - EMR: analytics/emr.md
-      - MSK: analytics/msk.md
-      - Kinesis: analytics/kinesis.md
-      - QuickSight: analytics/quicksight.md
+  - 📊 Analytics:
+      - analytics/athena.md
+      - analytics/glue.md
+      - analytics/emr.md
+      - analytics/kinesis.md
+      - analytics/msk.md
+      - analytics/quicksight.md
 
-  - Machine Learning & AI:
-      - Sagemaker: ML/sagemaker.md
-      - Rekognition: ML/rekognition.md
-      - Comprehend: ML/comprehend.md
-      - Lex: ML/lex.md
-      - Polly: ML/polly.md
-      - Personalize: ML/personalize.md
+  - 🤖 Machine Learning:
+      - ML/sagemaker.md
+      - ML/rekognition.md
+      - ML/comprehend.md
+      - ML/lex.md
+      - ML/polly.md
+      - ML/personalize.md
 
-  - Migration:
-      - DMS: migrations/dms.md
-      - DataSync: migrations/datasync.md
-      - Application Migration Service: migrations/application-migration-service.md
-      - Snowball: migrations/snowball.md
-      - Migration Evaluator (Opcional): migrations/migration-evaluator.md
+  - 🚚 Migration:
+      - migrations/dms.md
+      - migrations/datasync.md
+      - migrations/application-migration-service.md
+      - migrations/snowball.md
+      - migrations/migration-evaluator.md
 
-  - Cost & Support:
-      - Billing: cost/billing.md
-      - Cost Explorer: cost/cost-explorer.md
-      - Budgets: cost/budgets.md
-      - Trusted Advisor: support/trusted-advisor.md
-      - Support Plans: support/support.md
-      - Health Dashboard: support/health-dashboard.md
+  - 💰 Cost & Support:
+      - cost/billing.md
+      - cost/cost-explorer.md
+      - cost/budgets.md
+      - support/support.md
+      - support/trusted-advisor.md
+      - support/health-dashboard.md

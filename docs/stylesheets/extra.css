@@ -1,0 +1,11 @@
+/* Ajustes personalizados */
+:root {
+  --md-primary-fg-color: #FF9900;  /* AWS Orange */
+  --md-accent-fg-color: #232F3E;   /* AWS Dark Blue */
+}
+
+/* Mejora de admonitions */
+.md-typeset .admonition {
+  border-left: 4px solid;
+  border-radius: 0.2rem;
+}
