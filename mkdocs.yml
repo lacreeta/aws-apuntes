@@ -139,29 +139,29 @@ copyright: >
 
 # Navegación con iconos
 nav:
-  - 🏠 Inicio: index.md
+  - Inicio: index.md
   
-  - 📚 Guía de Estudio:
+  - Guía de Estudio:
       - Introducción a AWS: introduction.md
       - Infraestructura Global: global-infrastructure.md
       - Tips para el Examen: exam-tips.md
 
-  - 💻 Compute:
+  - Compute:
       - compute/ec2.md
       - compute/elastic-beanstalk.md
       - compute/containers.md
       - compute/serverless.md
 
-  - 💾 Storage:
+  - Storage:
       - storage/s3.md
       - storage/ebs.md
       - storage/efs.md
       - storage/glacier.md
 
-  - 🗄️ Databases:
+  - Databases:
       - databases/databases.md
 
-  - 🌐 Networking:
+  - Networking:
       - networking/vpc.md
       - networking/subnets.md
       - networking/load-balancers.md
@@ -173,7 +173,7 @@ nav:
       - networking/privatelink.md
       - networking/global-accelerator.md
 
-  - 🔒 Security:
+  - Security:
       - security/iam.md
       - security/shared-responsibility.md
       - security/kms.md
@@ -186,7 +186,7 @@ nav:
       - security/artifact.md
       - security/audit-manager.md
 
-  - ⚙️ Operations:
+  - Operations:
       - operations/cloudwatch.md
       - operations/cloudformation.md
       - operations/config.md
@@ -198,7 +198,7 @@ nav:
       - operations/service-catalog.md
       - operations/resource-explorer.md
 
-  - 📊 Analytics:
+  - Analytics:
       - analytics/athena.md
       - analytics/glue.md
       - analytics/emr.md
@@ -206,7 +206,7 @@ nav:
       - analytics/msk.md
       - analytics/quicksight.md
 
-  - 🤖 Machine Learning:
+  - Machine Learning:
       - ML/sagemaker.md
       - ML/rekognition.md
       - ML/comprehend.md
@@ -214,14 +214,14 @@ nav:
       - ML/polly.md
       - ML/personalize.md
 
-  - 🚚 Migration:
+  - Migration:
       - migrations/dms.md
       - migrations/datasync.md
       - migrations/application-migration-service.md
       - migrations/snowball.md
       - migrations/migration-evaluator.md
 
-  - 💰 Cost & Support:
+  - Cost & Support:
       - cost/billing.md
       - cost/cost-explorer.md
       - cost/budgets.md
